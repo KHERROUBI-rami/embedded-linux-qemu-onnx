@@ -1,0 +1,70 @@
+# Build outputs
+infer
+hello
+preprocess_test
+tile_read_test
+
+*.o
+*.ko
+*.mod
+*.mod.c
+*.cmd
+modules.order
+Module.symvers
+
+# Generated images and files
+*.img
+*.ext4
+*.cpio
+*.cpio.gz
+rootfs/
+build/
+out/
+dist/
+
+# Third-party archives
+*.tar.bz2
+*.tar.xz
+*.tgz
+*.zip
+
+# Extracted third-party source trees
+busybox-*/
+dropbear-*/
+linux-*/
+
+# ONNX Runtime packages and libraries
+onnxruntime-arm64/
+onnxruntime-linux-aarch64-*.tgz
+onnxruntime/include/
+onnxruntime/lib/
+
+# Model files
+models/*.onnx
+
+# Duplicate raw input
+ai/*.raw
+
+# Separate repositories and test datasets
+remote-sensing/
+test/
+
+# Logs and temporary files
+*.log
+qemu.log
+tmp/
+temp/
+
+# Python cache and environments
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editor and operating-system files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+.DS_Store
